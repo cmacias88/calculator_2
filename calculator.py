@@ -3,5 +3,17 @@
 from arithmetic import (add, subtract, multiply, divide, square, cube,
                         power, mod, )
 
+while True:
+    calculator_input = input("Please enter math function followed by the two numbers you would like to use (Please separate items by spaces): ")
+    # calculator_input.split(" ") 
+    # num_1 = int(calculator_input[1])
+    # num_2 = int(calculator_input[2])
 
-# Replace this with your code
+    if calculator_input == "q":
+        break
+    else:
+        calculator_input = calculator_input.split(" ") 
+        num_1 = int(calculator_input[1])
+        num_2 = int(calculator_input[2])
+        if calculator_input[0] == '+':
+            print(add(num_1, num_2))
