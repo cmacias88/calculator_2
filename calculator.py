@@ -11,7 +11,8 @@ while True:
     else:
         calculator_input = calculator_input.split(" ") 
         num_1 = int(calculator_input[1])
-        num_2 = int(calculator_input[2])
+        if len(calculator_input)>2:
+            num_2 = int(calculator_input[2])
         if calculator_input[0] == '+':
             print(add(num_1, num_2))
         elif calculator_input[0] == '-':
@@ -20,4 +21,6 @@ while True:
             print(multiply(num_1, num_2))
         elif calculator_input[0] == '/':
             print(divide(num_1, num_2))
+        elif calculator_input[0] == 'square':
+            print(square(num_1))
         
