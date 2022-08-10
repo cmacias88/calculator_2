@@ -16,3 +16,5 @@ while True:
             print(add(num_1, num_2))
         elif calculator_input[0] == '-':
             print(subtract(num_1, num_2))
+        elif calculator_input[0] == '*':
+            print(multiply(num_1, num_2))
