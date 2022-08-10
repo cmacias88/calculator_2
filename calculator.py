@@ -28,5 +28,7 @@ while True:
             print(cube(num_1))
         elif calculator_input[0] == 'pow':
             print(power(num_1, num_2))
+        elif calculator_input[0] == 'mod':
+            print(mod(num_1, num_2))
         
         
